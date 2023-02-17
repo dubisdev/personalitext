@@ -1,0 +1,31 @@
+{
+  "name": "personalitext",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Generate personalized texts from a template",
+  "bin": "dist/index.js",
+  "files": [
+    "dist",
+    "assets"
+  ],
+  "repository": "dubisdev/personalitext",
+  "scripts": {
+    "test": "vitest run --coverage",
+    "dev": "vitest",
+    "typecheck": "tsc",
+    "prebuild": "npm run typecheck",
+    "build": "pkgroll --minify"
+  },
+  "author": "David Jimenez <dubisdev@gmail.com> (https://dubis.dev)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "18.13.0",
+    "@vitest/coverage-c8": "0.28.5",
+    "pkgroll": "1.9.0",
+    "typescript": "4.9.5",
+    "vitest": "0.28.5"
+  },
+  "dependencies": {
+    "@clack/prompts": "0.4.3"
+  }
+}
